@@ -38,7 +38,7 @@ const News = () => {
         </div>
         <h3 className="text-dark text-decoration-underline  mt-4 mb-1">News Headlines</h3>
           <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center ">
-          { news.map(news => <NewsContent key={news.title} news={news} />) }       
+          { news.map(news => <NewsContent news={news} />) }       
           </div>
       </div>
   </section>
