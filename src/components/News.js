@@ -7,7 +7,7 @@ const News = () => {
 
   useEffect(() => {
     // hit NewsAPI Discover get news endpoint to get the recent news
-    fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=80fe0ede6032455799b98b46d8d5e2f2')
+    fetch('http://newsapi.org/v2/top-headlines?country=us&apiKey=80fe0ede6032455799b98b46d8d5e2f2')
     .then(response => response.json())
     .then(data => setNews(data.articles));
 
